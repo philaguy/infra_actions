@@ -31,7 +31,7 @@ build_and_push_to_docker_hub:
     runs-on: ubuntu-latest
     needs: test
     steps:
-- name: Check out the repo
+      - name: Check out the repo
         # Проверка доступности репозитория Docker Hub для workflow
         uses: actions/checkout@v2 
       - name: Set up Docker Buildx
